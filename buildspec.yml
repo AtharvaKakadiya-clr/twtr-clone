@@ -25,6 +25,7 @@ phases:
           -f be/Dockerfile \
           -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/twtr-be:prod \
           ./be
+      - echo building prod images...
       - >
         docker build \
           -f fe/Dockerfile \
